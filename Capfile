@@ -1,7 +1,7 @@
 load 'deploy' if respond_to?(:namespace) # cap2 differentiator
 
 set :client,  'sumocoders'
-set :project, 'framework'
+set :project, 'symfony'
 set :repository,  "https://github.com/sumocoders/Framework.git"
 
 ### DO NOT EDIT BELOW ###
