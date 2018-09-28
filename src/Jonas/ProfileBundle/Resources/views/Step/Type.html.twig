@@ -1,0 +1,9 @@
+{% extends '::base.html.twig' %}
+
+{% block main %}
+  {{ form_start(form) }}
+  {{ form_row(form.individual, {'attr': {'class': 'btn btn-primary'}}) }}
+  {{ form_row(form.group, {'attr': {'class': 'btn btn-primary'}}) }}
+  {{ form_row(form.student, {'attr': {'class': 'btn btn-primary'}}) }}
+  {{ form_end(form) }}
+{% endblock %}

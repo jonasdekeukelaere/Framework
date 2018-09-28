@@ -1,0 +1,10 @@
+jonas.routing.flow.default:
+  path: "/lid-worden/{stepName}"
+  defaults: { _controller: jonas.controller.flow:flowAction, flowName: 'registration' }
+  methods: [GET, POST]
+
+jonas.routing.flow.specific:
+  path: "/lid-worden/{flowName}/{stepName}"
+  defaults: { _controller: jonas.controller.flow:flowAction }
+  methods: [GET, POST]
+

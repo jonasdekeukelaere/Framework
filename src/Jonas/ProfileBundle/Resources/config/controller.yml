@@ -1,0 +1,5 @@
+services:
+  jonas.controller.flow:
+    class: Jonas\ProfileBundle\Controller\FlowController
+    arguments:
+      - "@jonas.flow.factory"

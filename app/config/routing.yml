@@ -21,3 +21,6 @@ sumo_coders_framework_user_bundle_crud:
 sumo_coders_framework_user_bundle:
   resource: "@SumoCodersFrameworkUserBundle/Controller"
   type: annotation
+
+jonas_profile_bundle:
+  resource: "@JonasProfileBundle/Resources/config/routing.yml"

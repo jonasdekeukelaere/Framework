@@ -33,6 +33,8 @@ class AppKernel extends Kernel
             new SumoCoders\FrameworkSearchBundle\SumoCodersFrameworkSearchBundle(),
             new SumoCoders\FrameworkMultiUserBundle\SumoCodersFrameworkMultiUserBundle(),
             new SumoCoders\FrameworkUserBundle\SumoCodersFrameworkUserBundle(),
+
+            new Jonas\ProfileBundle\JonasProfileBundle(),
         ];
 
         if ($this->getEnvironment() === 'prod') {

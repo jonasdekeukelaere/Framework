@@ -1,0 +1,22 @@
+services:
+  jonas.flow.factory:
+    class: Jonas\ProfileBundle\Flow\FlowFactory
+    arguments:
+      -
+        "registration": "@jonas.flow.registration"
+        "student": "@jonas.flow.student"
+
+  jonas.flow.registration:
+    class: Jonas\ProfileBundle\Flow\RegistrationFlow
+    arguments:
+      - "@form.factory"
+      - "@templating"
+      - "@router"
+
+  jonas.flow.student:
+    class: Jonas\ProfileBundle\Flow\StudentFlow
+    arguments:
+      - "@form.factory"
+      - "@templating"
+      - "@router"
+
